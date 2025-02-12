@@ -1,5 +1,5 @@
 # CVE-2025-MIST-CSRF  
-# Cross-Site Request Forgery (CSRF) in Admin's Switch User Operation
+## Cross-Site Request Forgery (CSRF) in Admin's Switch User Operation
 
 ## 📜 Description
 Mist CE v4.7.1 contains a **Cross-Site Request Forgery (CSRF)** vulnerability in the admin's user-switching operation. The vulnerable endpoint, `/su?email=<user email>`, allows administrators to impersonate users by simply visiting a crafted malicious page. Unlike other endpoints, this one lacks proper protection, which makes it vulnerable to exploitation. An attacker can craft a malicious HTML form that submits a request to the `/su` endpoint, enabling unauthorized actions within the context of an administrator’s session.
@@ -9,9 +9,7 @@ Mist CE v4.7.1 contains a **Cross-Site Request Forgery (CSRF)** vulnerability in
 - Other versions may also be affected but have not been tested.
 
 ## ⚠️ Disclaimer
-This project is intended for **educational and ethical research purposes only**.  
-Unauthorized testing on systems without explicit permission is illegal.  
-Use responsibly and only on systems you own or have permission to test.
+This project is intended for **educational and ethical research purposes only**. Unauthorized testing on systems without explicit permission is illegal. Use responsibly and only on systems you own or have permission to test.
 
 ## 💻 Exploit Details
 
@@ -61,4 +59,4 @@ Create a malicious HTML form designed to impersonate a specific user (e.g., `v@v
 - The **CVE-2025-XXXX** vulnerability was discovered by **Alex Perrakis (Stolichnayer)**.
 
 ## 🔗 References:
-- (CVE ID website)
+- [Mist CE Github Repository](https://github.com/mistio/mist-ce)
