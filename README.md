@@ -2,11 +2,11 @@
 ## Cross-Site Request Forgery (CSRF) in Admin's Switch User Operation
 
 ## 📜 Description
-Mist CE v4.7.1 contains a **Cross-Site Request Forgery (CSRF)** vulnerability in the admin's user-switching operation. The vulnerable endpoint, `/su?email=<user email>`, allows administrators to impersonate users by simply visiting a crafted malicious page. Unlike other endpoints, this one lacks proper protection, which makes it vulnerable to exploitation. An attacker can craft a malicious HTML form that submits a request to the `/su` endpoint, enabling unauthorized actions within the context of an administrator’s session.
+**Mist Community Edition (CE) v4.7.1** contains a **Cross-Site Request Forgery (CSRF)** vulnerability in the admin's user-switching operation. The vulnerable endpoint, `/su?email=<user email>`, allows administrators to impersonate users by simply visiting a crafted malicious page. Unlike other endpoints, this one lacks proper protection, which makes it vulnerable to exploitation. An attacker can craft a malicious HTML form that submits a request to the `/su` endpoint, enabling unauthorized actions within the context of an administrator’s session.
 
 ## 📌 Affected Version
-- **Mist CE v4.7.1** (latest release)
-- Other versions may also be affected but have not been tested.
+- Mist Community Edition (CE) v4.7.1
+- Other versions prior to v4.7.1 may also be affected
 
 ## ⚠️ Disclaimer
 This project is intended for **educational and ethical research purposes only**. Unauthorized testing on systems without explicit permission is illegal. Use responsibly and only on systems you own or have permission to test.
